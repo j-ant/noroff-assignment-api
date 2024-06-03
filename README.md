@@ -23,8 +23,9 @@ Each API endpoint contains both open and protected endpoints. All `GET` endpoint
 
 ## Endpoints
 
-**`GET`**: `/users`
-**`GET`**: `/users?username={:query}`
+🔓 **`GET`**: /users
+<br>
+🔓 **`GET`**: /users?username={:query}
 
 ### Sample Code
 ```javascript
@@ -44,7 +45,8 @@ fetch(`${API_URL}/users?username=${username}`)
 
 Protected endpoints require `X-API-Key` attached to the request header with the API key as the value.
 
-🔒 **`POST`**: `/users`
+🔒 **`POST`**: /users
+<br>
 The POST method is used to add a new record.
 
 ### Sample Code
@@ -85,7 +87,8 @@ fetch(`${API_URL}/users`, {
     "favourites": []
 }
 ```
-🔒 **`PATCH`**: `/users/{:id}`
+🔒 **`PATCH`**: /users/{:id}
+<br>
 The PATCH method is used to update a single record.
 
 ### Sample Code
