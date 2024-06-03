@@ -27,7 +27,7 @@ Each API endpoint contains both open and protected endpoints. All `GET` endpoint
 **`GET`** /users?username=<query>
 
 ### Sample Code
-```
+```javascript
 const API_URL = 'your-api-url' // Step 4 of the instructions above
 const username = 'harry_houdini'
 
@@ -48,7 +48,7 @@ Protected endpoints require `X-API-Key` attached to the request header with the 
 The POST method is used to add a new record.
 
 ### Sample Code
-```
+```javascript
 const API_URL = 'your-api-url' // Step 4 of the instructions above
 const apiKey = 'your-api-key' // Step 3 of the instructions above
 
@@ -78,7 +78,7 @@ fetch(`${API_URL}/users`, {
 
 ### Sample Response
 
-```
+```json
 {
     "id": 2,
     "username": "new_user1337",
@@ -89,7 +89,7 @@ fetch(`${API_URL}/users`, {
 The PATCH method is used to update a single record.
 
 ### Sample Code
-```
+```javascript
 const API_URL = 'your-api-url' // Step 4 of the instructions above
 const apiKey = 'your-api-key' // Step 3 of the instructions above
 const userId = 1 // Update the user with id 1
