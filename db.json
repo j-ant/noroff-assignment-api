@@ -2,8 +2,8 @@
   "users": [
     {
       "id": 1,
-      "username": "test-user",
-      "favourites": []
+      "username": "jj",
+      "translations": []
     }
   ]
 }
